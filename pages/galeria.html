@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería | Pintura-ArteMina</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <h1>Galería de Obras</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="sobre_mina.html">Sobre Mina</a></li>
+                <li><a href="exposiciones.html">Exposiciones</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Obras Destacadas</h2>
+            <p>Esta página mostrará una galería de imágenes de las obras de Mina. A continuación se
+            muestran ejemplos de cómo estructurar la galería. Sustituye las rutas de las imágenes
+            cuando cargues los archivos reales en <code>assets/images/</code>.</p>
+            <div class="gallery-grid">
+                <figure>
+                    <img src="../assets/images/Como_el_Sol.jpg" alt="Como el Sol">
+                    <figcaption>Como el Sol</figcaption>
+                </figure>
+                <figure>
+                    <img src="../assets/images/Proyecto_Verde.jpg" alt="Proyecto Verde">
+                    <figcaption>Proyecto Verde</figcaption>
+                </figure>
+                <figure>
+                    <img src="../assets/images/Anatomia_Resilencia.jpg" alt="Anatomía de la Resiliencia">
+                    <figcaption>Anatomía de la Resiliencia</figcaption>
+                </figure>
+                <figure>
+                    <img src="../assets/images/Mi_Mente.jpg" alt="Mi Mente">
+                    <figcaption>Mi Mente</figcaption>
+                </figure>
+                <figure>
+                    <img src="../assets/images/Proyecto_Mina.jpg" alt="Proyecto Mina">
+                    <figcaption>Proyecto Mina</figcaption>
+                </figure>
+                <figure>
+                    <img src="../assets/images/Huesos_y_Flores.jpg" alt="Huesos y Flores">
+                    <figcaption>Huesos y Flores</figcaption>
+                </figure>
+                <figure>
+                    <img src="../assets/images/Proyecto_Arte.jpg" alt="Proyecto Arte">
+                    <figcaption>Proyecto Arte</figcaption>
+                </figure>
+                <figure>
+                    <img src="../assets/images/Corazon.jpg" alt="Corazón">
+                    <figcaption>Corazón</figcaption>
+                </figure>
+                <figure>
+                    <img src="../assets/images/Ojo.jpg" alt="Ojo">
+                    <figcaption>Ojo</figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 ArteMina. Todos los derechos reservados.</p>
+    </footer>
+    <style>
+        /* Estilos específicos para la galería */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+        .gallery-grid figure {
+            margin: 0;
+        }
+        .gallery-grid img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 8px;
+        }
+        .gallery-grid figcaption {
+            text-align: center;
+            margin-top: 0.5rem;
+            font-size: 0.9rem;
+        }
+    </style>
+</body>
+</html>
