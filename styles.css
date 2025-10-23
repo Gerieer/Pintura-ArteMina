@@ -1,206 +1,57 @@
-/* Base styles for Pintura ArteMina site */
-
-:root {
-  --primary-font: 'Open Sans', sans-serif;
-  --heading-font: 'Oswald', sans-serif;
-  --color-dark: #222;
-  --color-light: #f5f5f5;
-  --color-accent: #c59c6d;
-  --max-width: 960px;
-}
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
+/* Estilos básicos para el sitio de ArteMina */
 body {
-  font-family: var(--primary-font);
-  color: var(--color-dark);
-  background-color: var(--color-light);
-  line-height: 1.6;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #fafafa;
 }
 
-h1,
-h2,
-h3 {
-  font-family: var(--heading-font);
-  font-weight: 600;
-  margin-bottom: 0.5em;
-  color: var(--color-dark);
-  text-transform: uppercase;
-  letter-spacing: 1px;
+header {
+    background-color: #222;
+    color: #fff;
+    padding: 1rem;
 }
 
-h2 {
-  font-size: 2rem;
+header h1 {
+    margin: 0;
+    font-size: 1.8rem;
 }
 
-h3 {
-  font-size: 1.6rem;
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 1rem;
 }
 
-p {
-  margin-bottom: 1em;
-  font-size: 1rem;
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-a {
-  color: var(--color-dark);
-  text-decoration: none;
+nav a:hover {
+    text-decoration: underline;
 }
 
-a:hover {
-  text-decoration: underline;
+main {
+    padding: 2rem;
 }
 
-/* Containers */
-.container {
-  max-width: var(--max-width);
-  margin: 0 auto;
-  padding: 2em 1em;
+.welcome h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
 }
 
-.section-light {
-  background-color: var(--color-light);
-  color: var(--color-dark);
-}
-
-.section-pattern {
-  background-color: #fff;
-}
-
-/* Hero section */
-.hero {
-  position: relative;
-  height: 80vh;
-  background-image: url('images/hero.png');
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.hero-overlay {
-  text-align: center;
-  color: #fff;
-  background: rgba(0, 0, 0, 0.45);
-  padding: 2em;
-  border-radius: 4px;
-}
-
-.hero .title {
-  font-size: 3rem;
-  line-height: 1;
-}
-
-.hero .subtitle {
-  font-family: var(--heading-font);
-  font-size: 1.2rem;
-  margin-top: 0.5em;
-  letter-spacing: 2px;
-}
-
-/* Biography two column layout */
-.two-column {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 2em;
-}
-
-.two-column .image {
-  flex: 1 1 40%;
-  min-height: 300px;
-  background-size: cover;
-  background-position: center;
-  border-radius: 8px;
-}
-
-.two-column .text {
-  flex: 1 1 55%;
-}
-
-/* Gallery */
-.gallery h2 {
-  text-align: center;
-  margin-bottom: 1em;
-}
-
-.gallery .intro {
-  text-align: center;
-  margin-bottom: 2em;
-  font-style: italic;
-}
-
-.artwork {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2em;
-  margin-bottom: 3em;
-  align-items: flex-start;
-}
-
-.artwork:nth-child(even) .artwork-image {
-  order: 2;
-}
-
-.artwork-image {
-  flex: 1 1 40%;
-  max-width: 400px;
-}
-
-.artwork-image img {
-  width: 100%;
-  height: auto;
-  border-radius: 6px;
-}
-
-.artwork-info {
-  flex: 1 1 55%;
-}
-
-.artwork-info .medium {
-  font-style: italic;
-  margin-bottom: 0.5em;
-}
-
-/* Contact */
-.contact-wrapper {
-  text-align: center;
-}
-
-.contact-wrapper h2 {
-  margin-bottom: 0.3em;
-}
-
-.contact-wrapper p {
-  font-size: 1.1rem;
-}
-
-/* Footer */
-.footer {
-  background-color: #333;
-  color: #eee;
-  padding: 1em 0;
-  text-align: center;
-  font-size: 0.9rem;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .hero {
-    height: 60vh;
-  }
-  .hero .title {
-    font-size: 2.2rem;
-  }
-  .two-column {
-    flex-direction: column;
-  }
-  .artwork {
-    flex-direction: column;
-  }
+footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
 }
